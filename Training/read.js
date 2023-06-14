@@ -12,8 +12,8 @@ const signer = wallet.connect(provider);
 // Connect to the database
 const db = new Database({ signer });
 
-// const tableName = "fraud_detect_314159_96";
-const tableName = "fraud_detect_314159_100";
+const tableName = "fraud_detect_314159_115";
+// const tableName = "fraud_detect_314159_104";
 
 async function main() {
     const { results, error } = await db.prepare(`SELECT * FROM ${tableName} ;`).all();

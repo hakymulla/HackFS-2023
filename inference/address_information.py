@@ -10,16 +10,14 @@ ETH_IN_WEI = 1000000000000000000
 
 
 def get_features_from_address(address):
-    print("get_features_from_address")
     url = (
-        "http://api.etherscan.io/api?module=account&action=txlist&address={address}"
+        "http://api.etherscan.com/api?module=account&action=txlist&address={address}"
         "&startblock=0&endblock=999999999&sort=asc&apikey={api_key}".format(
             address=address, api_key=API_KEY
         )
     )
     r = requests.get(url)
     data = r.json()
-    print("downloaded data")
 
     timestamp = []
     timestampSent = []
@@ -153,7 +151,6 @@ def get_features_from_address(address):
         txFreq,
         stdBalanceEth,
     ]
-    print("done get_features_from_address")
 
     return addr_normal_features
 

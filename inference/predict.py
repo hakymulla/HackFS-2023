@@ -10,7 +10,6 @@ from address_information import get_features_from_address
 
 
 def preprocessing(address):
-    print("preprocessing")
     columns = [
         "minTimeBetweenSentTnx",
         "maxTimeBetweenSentTnx",
@@ -49,17 +48,14 @@ def preprocessing(address):
     address_data = get_features_from_address(address=address)[1:]
     data = np.array(address_data).astype("float64").reshape(1, 32)
     test_data = pd.DataFrame(data, columns=columns)
-    print("done preprocessing")
 
     return test_data, address
 
 
 def predict(data, address):
     prediction_data, address = preprocessing(address=address)
-    print("predict")
     model = pickle.load(open("rf.pkl", "rb",))
     result = model.predict(prediction_data)
-    print("done predict")
     return result, address
 
 

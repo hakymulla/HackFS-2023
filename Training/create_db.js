@@ -30,9 +30,3 @@ async function main() {
 }
 
 main();
- //  totalEtherBalance integer, activityDays integer, dailyMax integer, ratioRecSent integer,
-        // ratioSentTotal integer, ratioRecTotal integer, giniSent integer, giniRec integer,
-        // txFreq integer, stdBalanceEth integer
-
-
-        // eth_fraud_314159_25
