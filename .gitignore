@@ -1,3 +1,7 @@
 inference/constants.py
+inference/Tableland/node_modules
+inference/Tableland/.env
 Training/node_modules/
 Training/.env
+Train/node_modules/
+Train/.env
