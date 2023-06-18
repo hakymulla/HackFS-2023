@@ -137,7 +137,7 @@ const provider = getDefaultProvider('https://api.calibration.node.glif.io/rpc/v0
 
 const daceContract = new ethers.Contract(contractAddress, abi, provider)
 
-cid = "QmQYdFRX5Z99R5e1BbyGUtruUp9xuiS1wnRm4ETvrpVWrt"
+cid = "QmS99pREeGL1SvScni7VDGWQP8Kv9KGkNiPuTgn1oX7VT2"
 
 async function DView(cid) {
 

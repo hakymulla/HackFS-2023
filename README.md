@@ -19,8 +19,9 @@ EFD also know as Ethereum Account Fraud Detection is a smart contract on Filecoi
     - TableLand Table Name - fraud_detect_314159_115
 
     DACE for LitProtocol
-     - Mumbai : 0x46de762fe5A3bbC73918B8c3cFe466d18Dd58903
-     - Caliberation : 0xec59DAFF6A78e09BA6fC9A257BAb82F3D7C3D116
+     - Caliberation : 0xec59DAFF6A78e09BA6fC9A257BAb82F3D7C3D116 (addSymmetricKey: encryptedSymmetricKey for a CID is saved here) (The onchain condition of adding an Ethereum Address for who can decrypt the CID doesn't work on Caliberation Tetnet so this is done on Mumbai)
+     - Mumbai : 0x883b3b399fc4eb846c5cb3655F96f277F3B657B8 (adddaceAccess: Mapping from Address to list of addresses,i.e mapping from the owner of the CID to addresses that can decrypt). isExistdaceAccess function is the on cahin condition, true means an Ethereum Account can decrypt.
+
 
 ## Dataset
  - https://www.kaggle.com/datasets/gescobero/ethereum-fraud-dataset

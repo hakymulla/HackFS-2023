@@ -11,7 +11,7 @@ const chain = "mumbai";
 require("dotenv").config({ path: ".env" });
 
 const userAddress = '0x6066484DE209A9db68d09Ce6241C38E27Baa9143'
-const contractAddress = '0x46de762fe5A3bbC73918B8c3cFe466d18Dd58903';
+const contractAddress = '0x883b3b399fc4eb846c5cb3655F96f277F3B657B8';
 
 
 const evmContractConditions = [
